@@ -1,0 +1,5 @@
+
+str='X-DSPAM-Confidence:0.8475'
+ssliced=str[19:25:1]
+print(ssliced)
+print(float("0.8475"))
