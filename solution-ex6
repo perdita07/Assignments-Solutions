@@ -1,0 +1,13 @@
+l1=[]
+while True:
+    
+    number=input("Enter the number :")
+    if number == "done":
+        break
+    else:
+        l1.append(int(number))
+        
+
+print(l1)
+print("Maximum:" ,max(l1))
+print("Minimum" ,min(l1))
