@@ -1,0 +1,28 @@
+num = 0
+max = 0
+min = 0
+count = 0
+
+while True:
+    number = input ('Enter number: ')
+    if number == "done":
+        print ("Maximum is " , str(max))
+        print ("Minimum is" , str(min))
+        break
+        
+    else:
+        try:
+            if count == 0:
+                max = float(number)
+                min = float(number)
+                count = 1
+         
+            else:
+                if float (number) > max:
+                    max = float (number)
+                else:
+                    if float (number) < min:
+                        min = float (number)
+            
+        except:
+            print ("Error detected. Please enter integers only.")
