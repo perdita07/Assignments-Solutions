@@ -1,0 +1,16 @@
+num=0
+total = 0
+count = 0
+average = 0
+while True:
+    number = input("Enter a number:")
+    if number == "done":
+        break
+    try:
+        total = total+ float(number)
+        count = count+1
+        average = total / count
+    except:
+        print ("Error detected. Please enter integers only.")
+    continue
+print (total, count, average)
